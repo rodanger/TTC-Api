@@ -4,7 +4,7 @@ const fs = require('fs');
 
 
 // Endpoint to Get a list of users
-app.get('/getUsers', function(req, res){
+app.get('/', function(req, res){
     fs.readFile(__dirname + "/" + "ttc.json", 'utf8', function(err,data){
         console.log(data);
         res.end(data); //
